@@ -15,3 +15,7 @@ RUN echo "daemon off;" | cat - >> /etc/nginx/nginx.conf
 # Create foreground script
 COPY files/nginxfpm /usr/local/bin/nginxfpm
 RUN chmod +x /usr/local/bin/nginxfpm
+
+# Defaults
+EXPOSE 80
+CMD /usr/local/bin/nginxfpm
