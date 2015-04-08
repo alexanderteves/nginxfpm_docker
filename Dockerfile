@@ -18,4 +18,5 @@ RUN chmod +x /usr/local/bin/nginxfpm
 
 # Defaults
 EXPOSE 80
+VOLUME /var/www
 CMD /usr/local/bin/nginxfpm
